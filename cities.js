@@ -48,6 +48,24 @@ function print_state(state_id){
 		option_str.options[option_str.length] = new Option(state_arr[i],state_arr[i]);
 	}
 }
+// script.js
+
+const button = document.getElementById("toggleButton");
+const body = document.body;
+const text = document.querySelectorAll("body p"); // Select all paragraphs
+
+button.addEventListener("click", function() {
+  if (body.classList.contains("dark")) {
+    // Change to light mode
+    body.classList.remove("dark");
+    text.forEach(p => p.classList.remove("darkText"));
+  } else {
+    // Change to dark mode
+    body.classList.add("dark");
+    text.forEach(p => p.classList.add("darkText"));
+  }
+});
+
 
 function print_city(city_id, city_index){
 	var option_str = document.getElementById(city_id);
