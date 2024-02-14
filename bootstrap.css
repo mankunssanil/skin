@@ -8940,6 +8940,15 @@
     h3 {
       orphans: 3;
       widows: 3;
+     .dark {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .darkText {
+    color: #fff;
+  }
+  
     }
     h2,
     h3 {
