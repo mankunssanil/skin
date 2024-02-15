@@ -181,6 +181,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</nav>
+	<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode</title>
+<style>
+    /* Default light mode styles */
+    body {
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    .dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<h1>Skin Disease Diagnosis</h1>
+
+<!-- Dark mode button -->
+<button onclick="DarkMode()">Dark Mode</button>
+
+<script>
+function DarkMode() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
 
 
 	<!-- footer -->
@@ -221,28 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</section>
 			<!-- //banner -->
-	<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toggle Color</title>
-<style>
-  body {
-    background-color: #fff; /* Initial background color */
-    color: #000; /* Initial text color */
-  }
-
-  .icon {
-    /* Button styles */
-    /* ... */
-  }
-</style>
-</head>
-<body>
-<button id="toggleButton" class="icon">Dark</button>
-<p>yaah!</p>
-<script src="script.js"></script>
-</body>
-
+	
 			<!-- core values -->
 			<section class="core-value py-5">
 				<div class="container py-md-4">
